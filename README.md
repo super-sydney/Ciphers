@@ -1,2 +1,2 @@
 # Ciphers
-Thing tha encodes and decodes different ciphers.
+Thing that encodes and decodes different ciphers.
