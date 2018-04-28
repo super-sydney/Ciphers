@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciphers</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="Ciphers.css">
+	<ul id="menu">
+		<li id="a1z26List" class="active"><button onclick="show('a1z26')">A1z26 Cipher</button></li>
+		<li id="atbashList"><button onclick="show('atbash')">Atbash Cipher</button></li>
+		<li id="caesarList"><button  onclick="show('caesar')">Caesar Cipher</button></li>
+		<li id="vigenereList"><button onclick="show('vigenere')">Vigenere Cipher</button></li>
+	</ul><br><br>
+	<div id="a1z26">
+		<h1>A1z26 Cipher</h1><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" placeholder="Text" id="a1z26Text"></textarea><br>
+		<button onclick="encode('a1z26')">Encode</button><button onclick="decode('a1z26')">Decode</button><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" id="a1z26Done" readonly="true" placeholder="Encoded/Decoded text"></textarea>
+	</div>
+	<div id="atbash" style="display: none">
+		<h1>Atbash Cipher</h1><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" placeholder="Text" id="atbashText"></textarea><br>
+		<button onclick="encode('atbash')">Encode</button><button onclick="decode('atbash')">Decode</button><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" id="atbashDone" readonly="true" placeholder="Encoded/Decoded text"></textarea>
+	</div>
+	<div id="caesar" style="display: none">
+		<h1>Caesar Cipher</h1><br>
+		<textarea style="width: 40%;" spellcheck="false" rows="10" placeholder="Text" id="caesarText"></textarea>
+		<textarea style="width: 40%;" spellcheck="false" rows="10" placeholder="Amount to shift" id="caesarShift"></textarea><br>
+		<button onclick="encode('caesar')">Encode</button><button onclick="decode('caesar')">Decode</button><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" id="caesarDone" readonly="true" placeholder="Encoded/Decoded text"></textarea>
+	</div>
+	<div id="vigenere" style="display: none">
+		<h1>Vigenere Cipher</h1><br>
+		<textarea style="width: 40%;" spellcheck="false" rows="10" placeholder="Text" id="vigenereText"></textarea>
+		<textarea style="width: 40%;" spellcheck="false" rows="10" placeholder="Key" id="vigenereKey"></textarea><br>
+		<button onclick="encode('vigenere')">Encode</button><button onclick="decode('vigenere')">Decode</button><br>
+		<textarea style="width: 90%;" spellcheck="false" rows="10" id="vigenereDone" readonly="true" placeholder="Encoded/Decoded text"></textarea>
+	</div>
+	<script type="text/javascript" src="Ciphers.js"></script>
+</body>
+</html>
